@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
-		"lint": "tsc && eslint . --ext .ts --ext .tsx --fix --max-warnings=0"
+		"build": "rm -rf dist && tsc && vite build",
+		"start": "pm2 start ecosystem.config.cjs"
 	},
 	"proxy": "http://localhost:8700",
 	"type": "module",
