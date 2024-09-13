@@ -1,0 +1,36 @@
+.createContainer {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	gap: 6px;
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+}
+
+.submitButton {
+	cursor: pointer;
+	border-radius: 8px;
+	height: 24px;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	background-color: #c4c4c4;
+	transition: filter 0.1s ease-in;
+	color: white;
+
+	&:hover {
+		filter: brightness(0.95);
+	}
+}
+
+.editContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.errorField {
+	border-color: red;
+}
